@@ -33,7 +33,7 @@ detector = HandDetector(staticMode=False, maxHands=1, modelComplexity=1, detecti
 # Initialize Gemini Client
 def get_client():
     # You define your variable and give it the string value directly
-    api_key = "WRITE API KEY HERE"
+    api_key = "WRITE API KEY HERE PLEASE"
 
     # You hand your local 'api_key' variable to Google's 'api_key' parameter
     return genai.Client(api_key=api_key)
