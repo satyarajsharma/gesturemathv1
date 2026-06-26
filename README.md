@@ -1,3 +1,7 @@
+created with help from this video https://www.youtube.com/watch?v=RhhN0CLnFdc
+uses cvzone and google gemini 2.5 free api. the APi stuff has changed drastically compared to last time
+uses streamlit to show output in browser. very pretty tbh. 
+
 1. main is just "Basic Hand Tracking Script".
 
 2. v2 and v4 run in a browser window using Streamlit. you'll need to Open them in PyCharm terminal and write - "streamlit run mainv4.py" (if its mainv4.py or change it to mainv2.py in case of v2). it might ask for email, just press enter and then browser window will open. allow if it asks for permissions
