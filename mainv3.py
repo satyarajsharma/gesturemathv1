@@ -12,13 +12,13 @@ cap.set(3, 1280)
 cap.set(4, 720)
 
 # Initialize HandDetector (Changed maxHands to 1 as requested)
-detector = HandDetector(staticMode=False, maxHands=1, modelComplexity=1, detectionCon=0.7, minTrackCon=0.5)
+detector = HandDetector(staticMode=False, maxHands=1, modelComplexity=1, detectionCon=0.6, minTrackCon=0.5)
 
 
 # Initialize Gemini Client
 def get_client():
     # You define your variable and give it the string value directly
-    api_key = "WRITE THE API KEY HERE"
+    api_key = "WRITE API KEY HERE"
 
     # You hand your local 'api_key' variable to Google's 'api_key' parameter
     return genai.Client(api_key=api_key)
@@ -86,9 +86,9 @@ while True:
         # Trigger API: 4 fingers up
         if fingers == [1, 1, 1, 1, 0]:
             if not request_sent:
-                print("Sending to Gemini 3.5 Flash... Please wait.")
+                print("Sending to Gemini 2.5 Flash... Please wait.")
                 try:
-                    result = send_to_gemini(canvas, prompt="Write about how meaningful this is")
+                    result = send_to_gemini(canvas, prompt="First tell me what did you detect. Then solve for math")
                     print("Gemini Answer:\n", result)
                 except Exception as e:
                     print("GenAI error:", e)
