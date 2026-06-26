@@ -1,5 +1,5 @@
 created with help from this video https://www.youtube.com/watch?v=RhhN0CLnFdc
-uses cvzone and google gemini 2.5 free api. the APi stuff has changed drastically compared to last time
+uses cvzone and google gemini 2.5 free api. the APi stuff has changed drastically compared to last time.
 uses streamlit to show output in browser. very pretty tbh. 
 
 1. main is just "Basic Hand Tracking Script".
