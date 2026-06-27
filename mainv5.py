@@ -90,12 +90,19 @@ with col2:
             # Wipe it back to pure black
             st.session_state.canvas = np.zeros_like(st.session_state.canvas)
 
-            # 3. The Get Answer Button
+            # --- NEW FEATURE: CUSTOM PROMPT ---
+    # st.text_input creates a text box on the website.
+    # The 'value' is the default text, but you can delete it and type anything live.
+    # Whatever is typed in this box gets saved to the 'custom_prompt' variable.
+    custom_prompt = st.text_input("Tell Gemini what to do:", value="Solve this math problem step by step")
+
+    # 3. The Get Answer Button (Updated)
     if st.button("Get Answer", type="primary"):
         if st.session_state.canvas is not None:
             with st.spinner("Thinking..."):
                 try:
-                    result = send_to_gemini(st.session_state.canvas)
+                    # UPDATED LINE: We pass the text from 'custom_prompt' to Gemini
+                    result = send_to_gemini(st.session_state.canvas, prompt=custom_prompt)
                     st.success("Got it!")
                     st.write(result)
                 except Exception as e:
