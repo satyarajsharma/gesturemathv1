@@ -1,3 +1,6 @@
+Use main.py, open terminal in Pycharm to lauunch is using "streamlit run mainv.py"
+=====================================
+
 created with help from this video https://www.youtube.com/watch?v=RhhN0CLnFdc
 uses cvzone and google gemini 2.5 free api. the APi stuff has changed drastically compared to last time.
 uses streamlit to show output in browser. very pretty tbh. 
@@ -15,3 +18,6 @@ hand tracking works as follows - if 1 fingers is visible, it will track the move
 4. "mainv3" is also has hardcoded API for testing, but the results show up in terminal, and webcam opens in a separate window for testing purposes.
 
 5. "test camera" is just used to check which cameras work. might implement the camera naming here in future.
+
+
+---------------

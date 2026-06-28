@@ -15,10 +15,10 @@ if 'canvas' not in st.session_state:
     st.session_state.canvas = None
 
 
-# Initialize Gemini Client
+# Initialize Gemini Client HARDCODED HARDCODED HARDCODED
 def get_client():
     # You define your variable and give it the string value directly
-    api_key = "WRITE API KEY HERE PLEASE"
+    api_key = "WRITE THE API HERE"
 
     # You hand your local 'api_key' variable to Google's 'api_key' parameter
     return genai.Client(api_key=api_key)
