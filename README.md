@@ -1,4 +1,4 @@
-Use main.py, open terminal in Pycharm to lauunch is using "streamlit run main.py"
+Use main.py, open terminal in Pycharm to launch it using "streamlit run main.py"
 =====================================
 
 created with help from this video https://www.youtube.com/watch?v=RhhN0CLnFdc
